@@ -10,7 +10,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "Do you offer ongoing support?",
-    answer: "Yes, we provide maintenance plans to ensure your website stays technically up-to-date and performs at its best.",
+    answer: "Yes, I provide maintenance plans to ensure your website stays technically up-to-date and performs at its best.",
   },
   {
     question: "Is the design optimized for mobile devices?",
@@ -18,7 +18,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "Can existing brand identities be integrated?",
-    answer: "Of course. We work closely with your CI guidelines to create a seamless and consistent brand experience.",
+    answer: "Of course. I work closely with your CI guidelines to create a seamless and consistent brand experience.",
   },
   {
     question: "Which technologies do you use?",

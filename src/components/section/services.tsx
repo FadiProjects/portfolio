@@ -40,7 +40,7 @@ export default function ServicesSection() {
         >
           <div className="flex flex-col justify-center min-w-[350px] md:min-w-[500px] pr-20">
             <h3 className="text-6xl md:text-8xl font-medium tracking-tighter text-white">
-              Our <br /> Services
+              My <br /> Services
             </h3>
             <div className="mt-8 flex items-center gap-4">
               <div className="h-[1px] w-12 bg-white/30" />

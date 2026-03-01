@@ -40,7 +40,7 @@ export const projects: Project[] = [
   },
   { 
     name: "Voltea", 
-    description: "Brand Identity & UI Design", 
+    description: "Web Development, Design & Branding", 
     img: "/img/work/voltea/laptop-website.jpg", 
     gallery: ["/img/work/voltea/ui-design-bundle.jpg", "/img/work/voltea/ui-design-first.jpg", "/img/work/voltea/ui-design-last.jpg"],
     route: "/work/voltea",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
   },
   { 
     name: "Böhmer Manufaktur", 
-    description: "Premium E-Commerce Experience", 
+    description: "UI/UX Design & Branding", 
     img: "/img/work/woodwork/laptop-website.jpg", 
     gallery: ["/img/work/woodwork/ui-design-bundle.jpg", "/img/work/woodwork/ui-design-first.jpg", "/img/work/woodwork/ui-design-last.jpg"],
     route: "/work/boehmer-manufaktur",
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     objectives: "Digital Showcase & Brand Storytelling",
     status: "Successfully completed",
     role: "Lead Designer",
-    techStack: ["Figma", "Branding", "HTML", "SCSS", "Javascript", "PHP", "In-house CMS", "SEO", "GDPR Compliance", "WCAG Compliant"],
+    techStack: ["Figma", "Branding", "UI Design", "UX Design"],
     challenge: "Böhmer Manufaktur stands for exceptional traditional craftsmanship. The challenge was to translate the haptic, high-quality nature of their physical wood products into a digital space that feels just as premium, avoiding a generic corporate look while maintaining a sophisticated modern edge.",
     strategy: "By combining generous whitespace with large-scale, high-contrast photography, the design directs all attention to the texture and detail of the wood. The goal was to create a digital showroom that breathes elegance and reflects the meticulous attention to detail found in the factory.",
     execution: "The design process involved crafting a bespoke visual language in Figma, centered around a refined typographic system and a muted, earthy color palette. I developed a high-end UI framework that uses subtle micro-interactions and sophisticated layouts to mirror the precision of the manufacturing process, ensuring a seamless and immersive brand story across all devices.",
