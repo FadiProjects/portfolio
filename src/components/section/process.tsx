@@ -34,7 +34,7 @@ export default function ProcessSection() {
   );
 }
 
-function StepItem({ step, isLast }: { step: Step; isLast: boolean }) {
+function StepItem({ step, isLast }: { step: any; isLast: boolean }) {
   const ref = useRef(null);
   const [active, setActive] = useState(false);
   
