@@ -5,7 +5,7 @@ import { projects } from "@/lib/projects-data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Globe, Github } from "lucide-react";
+import { Globe, Github, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
@@ -150,6 +150,21 @@ export default function ProjectDetail({ params }: { params: Promise<{ slug: stri
                       </a>
                     </Button>
                   )}
+                  {project.downloadUrl && (
+                    <Button asChild className="w-full h-14 rounded-full bg-zinc-100 text-black hover:bg-white flex gap-3 font-medium transition-all group cursor-pointer">
+                      <a 
+                        href={project.downloadUrl} 
+                        download 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        title={project.downloadLabel || "Download PDF"} 
+                        aria-label={project.downloadLabel || "Download PDF"}
+                      >
+                        {project.downloadLabel || "Download PDF"} 
+                        <Download className="w-4 h-4 transition-transform group-hover:-translate-y-1" />
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </motion.div>
             </div>
@@ -157,45 +172,47 @@ export default function ProjectDetail({ params }: { params: Promise<{ slug: stri
 
           {/* Gallery Showcase */}
           {project.gallery && project.gallery.length > 0 && (
-          <section className="mt-32">
-            <motion.h2 
-              initial={{ opacity: 0, filter: "blur(10px)" }}
-              whileInView={{ opacity: 1, filter: "blur(0px)" }}
-              viewport={{ once: true }}
-              className="text-2xl md:text-3xl font-medium mb-12 tracking-tight italic"
-            >
-              Visual Showcase
-            </motion.h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
-              {project.gallery.map((image, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30, filter: "blur(15px)" }}
-                  whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            <section className="mt-32 px-4">
+              <div className="max-w-[1620px] mx-auto">
+                <motion.h2 
+                  initial={{ opacity: 0, filter: "blur(10px)" }}
+                  whileInView={{ opacity: 1, filter: "blur(0px)" }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className={`relative overflow-hidden rounded-[2rem] bg-zinc-900/50 border border-zinc-800/50 shadow-xl p-4 md:p-8 flex items-center justify-center 
-                    ${index === project.gallery!.length - 1 && project.gallery!.length % 2 !== 0 
-                      ? 'md:col-span-2 min-h-[400px] md:min-h-[600px]' 
-                      : 'min-h-[400px] md:min-h-[500px]' 
-                    }`}
+                  className="text-2xl md:text-3xl font-medium mb-12 tracking-tight italic"
                 >
-                  <div className="relative w-full h-full min-h-[inherit] flex items-center justify-center">
-                    <Image
-                      src={image}
-                      alt={`${project.name} Detail ${index + 1}`}
-                      fill
-                      className="object-contain transition-all duration-700 hover:scale-[1.02]"
-                      sizes="(max-width: 1280px) 100vw, 50vw"
-                      priority={index < 2}
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-        )}
+                  Visual Showcase
+                </motion.h2>
+                
+                <div className="flex flex-col items-center gap-16 md:gap-24">
+                  {project.gallery.map((image, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 30, filter: "blur(15px)" }}
+                      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.8, delay: index * 0.1 }}
+                      className="w-full flex justify-center"
+                    >
+                      <div 
+                        className="relative overflow-hidden rounded-[8px] bg-zinc-900/50 border border-zinc-800/50 shadow-2xl"
+                        style={{ 
+                          width: 'fit-content',
+                          maxWidth: '1620px' 
+                        }}
+                      >
+                        <img
+                          src={image}
+                          alt={`${project.name} Detail ${index + 1}`}
+                          className="w-full h-auto block transition-all duration-700 hover:scale-[1.01]"
+                        />
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
         </div>
       </div>
     </main>
