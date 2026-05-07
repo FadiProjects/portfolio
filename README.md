@@ -1,4 +1,4 @@
-# Modern Portfolio | Web Developer & Designer
+# Modern Portfolio | Fadi Moussa
 
 A high-performance, responsive portfolio showcasing my latest work and digital solutions. Built with a focus on technical excellence and aesthetic UI/UX design.
 
