@@ -17,7 +17,7 @@ export default function FAQSection() {
         
         <div className="lg:sticky lg:top-32 space-y-8 h-fit">
           <SubHeading as="h3">
-            Have a question?
+            Frequently Asked Questions
           </SubHeading>
           
           <motion.p 
@@ -27,7 +27,7 @@ export default function FAQSection() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-muted-foreground text-xl md:text-2xl max-w-md leading-tight"
           >
-            Everything you need to know about our collaboration and the process.
+            Insights into my workflow, design philosophy, and technical approach.
           </motion.p>
         </div>
 

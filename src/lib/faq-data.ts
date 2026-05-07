@@ -5,23 +5,23 @@ export interface FAQItem {
 
 export const faqs: FAQItem[] = [
   {
-    question: "Do you handle both design and technical development?",
-    answer: "Yes, I provide a seamless end-to-end process. From the initial UI/UX design in Figma to the final high-performance code, I ensure your vision is translated perfectly into a functional product.",
+    question: "Do you focus more on aesthetics or functionality?",
+    answer: "I believe great design must do both. While I strive for high-end aesthetics, my priority is always usability and strategic purpose. I design products that not only look stunning but solve real user problems through intuitive UX.",
   },
   {
-    question: "Do you offer ongoing support?",
-    answer: "Yes, I provide maintenance plans to ensure your website stays technically up-to-date and performs at its best.",
+    question: "How do you bridge the gap between design and development?",
+    answer: "As a Design Engineer, I speak both languages fluently. I use Design Systems and organized Figma handovers to ensure that every pixel-perfect design is technically feasible and translates into clean, scalable code without friction.",
   },
   {
-    question: "Is the design optimized for mobile devices?",
-    answer: "Absolutely. Every project follows a mobile-first approach and is rigorously tested across all modern screen sizes.",
+    question: "What is your typical design-to-code workflow?",
+    answer: "I start with strategic UX research and wireframing, followed by high-fidelity UI design in Figma. Once the design system is defined, I implement the frontend using modern tech stacks like Next.js and Tailwind, ensuring a seamless transition from concept to production.",
   },
   {
-    question: "Can existing brand identities be integrated?",
-    answer: "Of course. I work closely with your CI guidelines to create a seamless and consistent brand experience.",
+    question: "How do you stay updated with the rapidly evolving design and tech landscape?",
+    answer: "I am a lifelong learner, constantly exploring emerging trends like AI-driven design tools and new frontend patterns. I regularly experiment with side projects to ensure my skills remain at the cutting edge of industry standards.",
   },
   {
-    question: "Which technologies do you use?",
-    answer: "I select the most suitable tools for each project, utilizing modern frameworks, CMS, and cutting-edge digital solutions. This ensures I deliver high-performance, scalable, and future-proof experiences tailored to your specific needs.",
+    question: "How do you handle feedback or conflicting design opinions?",
+    answer: "I view feedback as a tool for growth, not a critique. I base my design decisions on data and user research rather than personal preference. When opinions conflict, I facilitate a solution-oriented discussion.",
   },
 ];

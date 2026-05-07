@@ -9,10 +9,10 @@ import { SmoothScroll } from '@/components/core/scroll-smooth';
 export const metadata: Metadata = {
   metadataBase: new URL("https://fadimoussa.com"),
   title: {
-    default: "Fadi Moussa | Web Developer & Designer",
-    template: "%s | Web Developer & Designer Fadi Moussa"
+    default: "Fadi Moussa | UI/UX & Product Designer | Design Engineer",
+    template: "%s | UI/UX & Product Designer | Design Engineer Fadi Moussa"
   },
-  description: "Professional portfolio of Web Developer and Designer Fadi Moussa, specializing in high-performance web development, custom UI/UX design, and interactive motion systems. Delivering scalable digital solutions with a focus on modern technologies and user experience.",
+  description: "Professional portfolio of Product Designer & Design Engineer Fadi Moussa, specializing in high-performance digital products, custom UI/UX design, and interactive motion systems. Delivering scalable digital solutions with a focus on modern technologies and user experience.",
   keywords: [
     "Web Developer", 
     "Web Designer", 
@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     "UX Designer", 
     "Portfolio Fadi Moussa",
     "SEO Engineer",
+    "Product Designer",
+    "Design Engineer"
   ],
   alternates: {
     canonical: "/",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://fadimoussa.com",
-    title: "Fadi Moussa | Web Developer & Designer",
+    title: "Fadi Moussa | Product Designer & Design Engineer",
     description: "Crafting high-performance digital experiences with a focus on clean code and intuitive design.",
     siteName: "Fadi Moussa Portfolio",
     images: [
@@ -47,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fadi Moussa | Web Developer & Designer",
-    description: "Web Development & Design with passion",
+    title: "Fadi Moussa | Product Designer & Design Engineer",
+    description: "Product Design & Design Engineering with passion",
   },
   robots: {
     index: false,
@@ -97,12 +99,12 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Fadi Moussa",
     "url": "https://fadimoussa.com",
-    "jobTitle": "Web Developer & Designer",
-    "description": "Professional Web Developer and Designer specializing in high-performance digital experiences.",
+    "jobTitle": "Product Designer & Design Engineer",
+    "description": "Professional Product Designer & Design Engineer specializing in high-performance digital products.",
     "sameAs": [
       "https://github.com/FadiProjects",
     ],
-    "knowsAbout": ["Web Development", "UI/UX Design", "Next.js", "React", "SEO", "WCAG", "TailwindCSS", "CMS", "Figma", "Frameworks", "HTML", "CSS", "SCSS", "Javascript", "Wordpress"]
+    "knowsAbout": ["Web Development", "UI/UX Design", "Next.js", "React", "SEO", "WCAG", "TailwindCSS", "CMS", "Figma", "Frameworks", "HTML", "CSS", "SCSS", "Javascript", "Wordpress", "Product Design", "Design Engineering", "Web Design", "Visual Design", "Branding", "Conversion Optimization", "Figma", "Adobe Photoshop", "Claude AI", "GSAP", "Framer Motion"]
   };
   return (
     <html lang="en" className={`dark ${authorFont.variable}`}>

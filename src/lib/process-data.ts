@@ -7,17 +7,17 @@ export interface step {
 export const process_steps: step[] = [
   { 
     id: "01", 
-    title: "Contact & Discovery", 
-    desc: "I start with a deep dive into your vision. Whether it's a new brand or a complex web app, I define the goals to ensure a perfect start." 
+    title: "Strategy & UX Research", 
+    desc: "Every project begins with a deep dive into user needs and business goals. I define the strategic roadmap and information architecture to ensure a solid UX foundation." 
   },
   { 
     id: "02", 
-    title: "Plan & Concept", 
-    desc: "Strategy meets design. I create designs in Figma and define the technical architecture  using modern web standards to ensure a scalable foundation." 
+    title: "Interface Design & Systems", 
+    desc: "I craft high-fidelity UI in Figma, building scalable design systems rather than just static screens. This ensures visual consistency and a smooth transition to development." 
   },
   { 
     id: "03", 
-    title: "Development & Launch", 
-    desc: "Bringing designs to life with clean, high-performance code. I focus on accessibility, performance, and search engine optimization for a flawless digital launch."
+    title: "Engineering & Deployment", 
+    desc: "I translate designs into performant, accessible code using modern stacks. My focus lies on clean architecture, performance optimization, and a seamless digital launch."
   },
 ];
